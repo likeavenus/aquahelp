@@ -6,19 +6,12 @@ module.exports = {
   project: build,
   FTP: {
     params: {
-      host: "demo.traf.spb.ru",
-      user: "sky",
-      password: "IX5Khe2r",
+      host: "",
+      user: "",
+      password: "",
       parallel: 10
     },
-    sitePath: "" // Пример - "/YOURSITE.test.demo.traf.spb.ru/htdocs/"
-  },
-  lentaZIP: {
-    folderName: "32432", // 21082108__raif
-    ZIPName: "name", // raiffeisen
-    ZIPCount: "count",
-    content: ["build/**/*.*", "!build/tpl/**/*.html"],
-    html: ["build/tpl/**/*.*", "!build/tpl/_template.html"]
+    sitePath: ""
   },
   src: {
     scss: [
