@@ -7,15 +7,6 @@ a {
   border: none;
   outline: none;
   transition: 0.3s;
-  &:hover {
-    color: $colorForLinkEffects;
-  }
-  &:active {
-    color: $colorForLinkEffects;
-  }
-  &:focus {
-    color: $colorForLinkEffects;
-  }
 }
 
 button {
@@ -29,15 +20,6 @@ button {
   cursor: pointer;
   background: none;
   transition: 0.3s;
-  &:hover {
-    color: $colorForButtonsEffects;
-  }
-  &:active {
-    color: $colorForButtonsEffects;
-  }
-  &:focus {
-    color: $colorForButtonsEffects;
-  }
 }
 
 // Стили для чекбоксов и радиокнопок

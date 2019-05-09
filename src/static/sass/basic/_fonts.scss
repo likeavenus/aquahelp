@@ -1,20 +1,53 @@
-/* Your custom fonts here */
-
-/* Example
+@font-face {
+  font-family: 'lato-reg';
+  src: url('../fonts/lato-regular.woff2') format('woff2');
+  font-weight: 400;       // For normal width. It could has another value
+  font-style: normal;     // Also could has another value
+}
 
 @font-face {
-    font-family: 'CustomFont';
-    src: url('../fonts/Custom-Font.eot');
-    src: url('../fonts/Custom-Font.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Custom-Font.woff') format('woff'),
-         url('../fonts/Custom-Font.svg#custom_font') format('svg');
-    font-weight: 400;       // For normal width. It could has another value   
-    font-style: normal;     // Also could has another value
-    }
+  font-family: 'oswald-bold';
+  src: url('../fonts/Oswald-Bold.woff') format('woff');
+  font-weight: 400;       // For normal width. It could has another value
+  font-style: normal;     // Also could has another value
+}
+
+@font-face {
+  font-family: 'oswald-reg';
+  src: url('../fonts/Oswald-Regular.woff') format('woff');
+  font-weight: 400;       // For normal width. It could has another value
+  font-style: normal;     // Also could has another value
+}
+
+@font-face {
+  font-family: 'Lato-Medium';
+  src: url('../fonts/Lato-Medium.woff') format('woff');
+  font-weight: 600;       // For normal width. It could has another value
+  font-style: normal;     // Also could has another value
+}
 
 
 
-*/
+$lato-reg: 'lato-reg',
+Helvetica,
+Arial,
+sans-serif;
+
+$oswald-bold: 'oswald-bold',
+Helvetica,
+Arial,
+sans-serif;
+
+$oswald-reg: 'oswald-reg',
+Helvetica,
+Arial,
+sans-serif;
+
+$lato-med: 'Lato-Medium',
+Helvetica,
+Arial,
+sans-serif;
+
 
 // Var for using custom font
 $CustomFont: 'Open Sans',

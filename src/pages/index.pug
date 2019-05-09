@@ -1,10 +1,13 @@
 extends template/_layout
-
-//- include ../components/hello/hello
+include ../components/header/header
+include ../components/welcome/welcome
+include ../components/advantages/advantages
 block vars
   - var title = "Главная";
 
 
 block content 
 
-  //- +hello()
+  +header()
+  +welcome()
+  +advantages()

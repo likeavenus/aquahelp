@@ -1,0 +1,107 @@
+.header {
+  display: block;
+  padding-top: 20px;
+  position: relative;
+}
+
+.header_wrapper {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 47px;
+}
+
+.header_logo {
+  width: 82.5px;
+  height: 55px;
+}
+
+.header_menu {
+  width: 28px;
+  height: 16px;
+  background: url("../img/header/burger.svg") no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+  transition: all .2s ease;
+
+  &.active {
+    width: 22px;
+    height: 22px;
+    background: url("../img/header/cross.svg") no-repeat center;
+    background-size: contain;
+  }
+}
+.header_menu_list {
+  position: absolute;
+  top: 112px;
+  background: #fff;
+  left: 0;
+  width: 100%;
+  z-index: -10;
+  margin-top: -500px;
+  transition: all .3s ease;
+  opacity: 0;
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: 16px;
+    top: -20px;
+    width: 94px;
+    height: 167px;
+    background: url("../img/header/dude.svg") no-repeat center;
+    background-size: contain;
+  }
+
+  &.active {
+    z-index: 50;
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+.header_menu_item {
+  padding-left: 16px;
+  padding-right: 16px;
+  font-family: $oswald-reg;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 30px;
+
+  &:first-child {
+    font-family: $oswald-bold;
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 51px;
+    letter-spacing: 2px;
+    position: relative;
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: 6px;
+      background: #235784;
+      position: absolute;
+      left: 0;
+      top: 34px;
+    }
+
+    & a {
+      text-decoration: none;
+      color: #235784;
+    }
+  }
+
+  & a {
+    text-decoration: none;
+  }
+}
+
+.vk_sibling {
+  margin-bottom: 50px;
+}

@@ -1,6 +1,9 @@
 import $ from "jquery";
+import "owl.carousel";
 
-// import Component from '../../components/Component/Component';
+import header from "../../components/header/header";
+import advantages from "../../components/advantages/advantages";
 
-// Component()
+header();
+advantages();
 
