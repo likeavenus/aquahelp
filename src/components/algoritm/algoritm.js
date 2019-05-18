@@ -18,7 +18,15 @@ export default function algoritm() {
         });
     }
 
-    startOwlCarousel();
+
+
+    $(document).ready(function () {
+        if ($(window).width() < 768) {
+            startOwlCarousel();
+        } else if ($(window).width() >= 768) {
+            slider.trigger('destroy.owl.carousel');
+        }
+    });
 
     $(window).on('resize', function () {
         console.log($(window).width());

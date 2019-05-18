@@ -12,6 +12,16 @@
   @media (min-width: $tablet) {
     padding-bottom: 94px;
   }
+
+  @media (min-width: 1366px) {
+    padding-bottom: 171px;
+    padding-top: 49px;
+  }
+
+  @media (min-width: 1920px) {
+    padding-top: 28px;
+    padding-bottom: 200px;
+  }
 }
 
 .algoritm_title {
@@ -32,15 +42,40 @@
     padding-top: 24px;
     margin-bottom: 41px;
   }
+
+  @media (min-width: 1366px) {
+    margin-left: 42px;
+    font-size: 36px;
+    line-height: 53px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 64px;
+    line-height: 95px;
+    padding-top: 0;
+    margin-bottom: 153px;
+    margin-left: 78px;
+  }
 }
 
 .algoritm_list {
   @media (min-width: $tablet) {
-    display: flex;
+    display: flex !important;
     flex-flow: row wrap;
     justify-content: center;
     width: 480px;
     margin: 0 auto;
+  }
+
+  @media (min-width: 1366px) {
+    width: 1266px;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: 1920px) {
+    width: 1628px;
+    margin-left: 78px;
   }
 }
 
@@ -115,6 +150,68 @@
 
     & p {
       font-size: 15px;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    width: 220px;
+    height: 154px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 90px;
+
+    & p {
+      font-size: 18px;
+      line-height: 19px;
+      padding-top: 0;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .algoritm_list .algoritm_item {
+    margin-right: 90px;
+    margin-bottom: 0px;
+
+    &:not(:last-child) {
+      &:before {
+        width: 90px;
+        right: -90px;
+        content: '';
+        position: absolute;
+        height: 18px;
+        background: #40A8C4;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &:after {
+      top: 72%;
+    }
+
+  }
+}
+
+@media (min-width: 1920px) {
+  .algoritm_list .algoritm_item {
+    margin-right: 180px;
+    width: 271px;
+    height: 154px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:not(:last-child):before {
+      width: 184px;
+      left: 270px;
     }
   }
 }

@@ -12,6 +12,15 @@
     width: 768px;
     padding-top: 139px;
   }
+
+  @media (min-width: 1366px) {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 129px;
+  }
 }
 
 .auqaInfo_title {
@@ -48,6 +57,30 @@
       top: -78px;
     }
   }
+
+  @media (min-width: 1366px) {
+    padding-left: 219px;
+
+    &:after {
+      width: 224px;
+      height: 396px;
+      left: 32px;
+      top: -119px;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 64px;
+    line-height: 95px;
+    padding-left: 368px;
+
+    &:after {
+      width: 388px;
+      height: 685px;
+      left: 40px;
+      top: -207px;
+    }
+  }
 }
 
 .aquaInfo_list {
@@ -62,6 +95,19 @@
     width: 410px;
     margin-left: 229px;
     margin-bottom: 111px;
+  }
+
+  @media (min-width: 1366px) {
+    width: 907px;
+    margin-left: 400px;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1920px) {
+    width: 1302px;
+    margin-left: 532px;
+    justify-content: flex-start;
   }
 }
 
@@ -85,6 +131,35 @@
       margin-right: 117px;
     }
   }
+
+  @media (min-width: 1366px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &:first-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    width: 208px;
+    margin-right: 144px;
+
+    &:first-child {
+      margin-right: 144px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & img {
+      width: 204px;
+      margin-bottom: 41px;
+    }
+  }
 }
 
 .auqaInfo_item_title {
@@ -95,6 +170,17 @@
 
   @media (min-width: $tablet) {
     font-size: 20px;
+  }
+
+  @media (min-width: 1366px) {
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 36px;
+    line-height: 34px;
+    margin-bottom: 24px;
   }
 }
 
@@ -107,5 +193,15 @@
   @media (min-width: $tablet) {
     font-size: 14px;
     line-height: 17px;
+  }
+
+  @media (min-width: 1366px) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 24px;
+    line-height: 34px;
   }
 }
