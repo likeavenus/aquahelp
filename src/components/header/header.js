@@ -8,4 +8,23 @@ export default function header() {
     };
 
     openMenuButton.addEventListener('click', handleOpenMenu);
+
+
+    $(document).ready(function() {
+        $(".header a").click(function() {
+            if ($(window).width() <= 768) {
+                $('.header_menu_list').removeClass('active');
+                $('.header_menu').removeClass('active');
+            }
+            $("html, body").animate({
+                scrollTop: $($(this).attr("href")).offset().top - 150 + "px"
+            }, {
+                duration: 500,
+                easing: "swing"
+            });
+            return false;
+        });
+
+
+    });
 }

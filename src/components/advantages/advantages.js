@@ -13,6 +13,14 @@ export default function advantages() {
                 768: {
                     items: 2,
                     stagePadding: 80
+                },
+                1024: {
+                    items: 3,
+                    stagePadding: 50
+                },
+                1200: {
+                    items: 3,
+                    stagePadding: 80
                 }
             }
         });

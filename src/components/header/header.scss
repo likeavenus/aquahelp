@@ -119,7 +119,7 @@
     opacity: 1;
   }
 
-  @media (min-height: $tablet) {
+  @media (min-width: $tablet) {
     text-align: center;
   }
 
