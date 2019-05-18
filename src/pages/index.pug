@@ -2,12 +2,21 @@ extends template/_layout
 include ../components/header/header
 include ../components/welcome/welcome
 include ../components/advantages/advantages
+include ../components/aquaInfo/aquaInfo
+include ../components/algoritm/algoritm
+include ../components/contacts/contacts
+include ../components/footer/footer
+
 block vars
   - var title = "Главная";
 
 
-block content 
+block content
 
   +header()
   +welcome()
   +advantages()
+  +aquaInfo()
+  +algoritm()
+  +contacts()
+  +footer()

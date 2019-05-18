@@ -1,5 +1,5 @@
 export default function advantages() {
-    const slider = $('.owl-carousel');
+    const slider = $('.advantages_slider');
 
     slider.owlCarousel({
         responsive: {
@@ -11,7 +11,7 @@ export default function advantages() {
             },
             768: {
                 items: 2,
-                stagePadding: 20
+                stagePadding: 80
             }
         }
     });

@@ -1,0 +1,120 @@
+.algoritm {
+  display: block;
+  background: url("../img/algoritm/bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.algoritm_wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 72px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 94px;
+  }
+}
+
+.algoritm_title {
+  width: 280px;
+  margin: 0 auto;
+  font-family: $oswald-reg;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 33px;
+  padding-top: 10px;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet) {
+    margin-left: 106px;
+    font-size: 36px;
+    line-height: 53px;
+    width: auto;
+    padding-top: 24px;
+    margin-bottom: 41px;
+  }
+}
+
+.algoritm_list {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+.algoritm_item {
+  width: 162px;
+  height: 94px;
+  background: #40A8C4;
+  border-radius: 8px;
+  
+  & p {
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: $lato-med;
+    padding: 26px 15px 0;
+  }
+
+  @media (min-width: $tablet) {
+    width: 200px;
+    height: 120px;
+    margin-right: 45px;
+    margin-bottom: 23px;
+    position: relative;
+
+    &:first-child {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 18px;
+        background: #40A8C4;
+        right: -50px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 18px;
+        background: #40A8C4;
+        right: -50px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+      margin-bottom: 0;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 116px;
+        height: 196px;
+        right: -116px;
+        top: 96%;
+        transform: translateY(-50%);
+        background: url("../img/algoritm/krane.svg") no-repeat center;
+        background-size: contain;
+      }
+    }
+
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+
+    & p {
+      font-size: 15px;
+    }
+  }
+}

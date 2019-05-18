@@ -1,0 +1,111 @@
+.aquaInfo {
+  display: block;
+}
+
+.aquaInfo_wrapper {
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 61px;
+
+  @media (min-width: $tablet) {
+    width: 768px;
+    padding-top: 139px;
+  }
+}
+
+.auqaInfo_title {
+  font-family: $oswald-reg;
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: normal;
+  position: relative;
+  padding-left: 69px;
+  margin-bottom: 140px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -49px;
+    width: 95px;
+    height: 167px;
+    background: url("../img/header/dude.svg") no-repeat center;
+    background-size: contain;
+    transform: rotateY(180deg);
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 53px;
+    padding-left: 142px;
+    margin-bottom: 58px;
+
+    &:after {
+      width: 155px;
+      height: 273px;
+      left: 19px;
+      top: -78px;
+    }
+  }
+}
+
+.aquaInfo_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 224px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 410px;
+    margin-left: 229px;
+    margin-bottom: 111px;
+  }
+}
+
+.aquaInfo_list_item {
+  width: 91px;
+  text-align: left;
+
+  &:first-child{
+    margin-bottom: 37px;
+  }
+
+  & img {
+    margin-bottom: 6px;
+    width: 100%;
+  }
+
+  @media (min-width: $tablet) {
+    width: 143px;
+
+    &:first-child {
+      margin-right: 117px;
+    }
+  }
+}
+
+.auqaInfo_item_title {
+  font-family: $lato-reg;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 34px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+  }
+}
+
+.auqaInfo_item_text {
+  font-family: $lato-reg;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
