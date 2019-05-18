@@ -135,8 +135,8 @@
     }
 
     &:after {
-      left: 190px;
-      transform: rotateY(180deg);
+      left: 50%;
+      transform: translateX(-537%) rotateY(180deg);
       top: 4px;
       right: auto;
     }
@@ -145,6 +145,10 @@
   @media (min-width: 1920px) {
     &.active {
       padding-bottom: 40px;
+    }
+
+    &:after {
+      transform: translateX(-686%) rotateY(180deg);
     }
   }
 }
