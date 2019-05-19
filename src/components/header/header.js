@@ -11,7 +11,7 @@ export default function header() {
 
 
     $(document).ready(function() {
-        $(".header a").click(function() {
+        $(".js-scroll").click(function() {
             if ($(window).width() <= 768) {
                 $('.header_menu_list').removeClass('active');
                 $('.header_menu').removeClass('active');

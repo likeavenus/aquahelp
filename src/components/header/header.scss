@@ -188,6 +188,14 @@
 
   & a {
     text-decoration: none;
+
+    transition: all .3s ease;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: #ff5722;
+    }
   }
 
   @media (min-width: 1366px) {
@@ -251,6 +259,7 @@
 
 .header_phone {
   display: none;
+  transition: all .3s ease;
 
   @media (min-width: 1366px) {
     display: block;
@@ -268,5 +277,8 @@
   @media (min-width: 1920px) {
     font-size: 48px;
     line-height: 71px;
+  }
+
+  &:hover {
   }
 }
