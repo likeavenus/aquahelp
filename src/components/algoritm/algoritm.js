@@ -29,7 +29,6 @@ export default function algoritm() {
     });
 
     $(window).on('resize', function () {
-        console.log($(window).width());
         if ($(window).width() >= 768) {
             slider.trigger('destroy.owl.carousel');
         }

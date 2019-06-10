@@ -38,7 +38,6 @@ export default function advantages() {
 
 
     $(window).on('resize', function () {
-        console.log($(window).width());
         if ($(window).width() >= 1366) {
             slider.trigger('destroy.owl.carousel');
         }

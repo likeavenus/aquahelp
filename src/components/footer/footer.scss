@@ -115,12 +115,32 @@
   }
 }
 
-.footer_vk_link {
+.footer_link {
   display: inline-block;
   width: 32px;
   height: 32px;
-  background: url('../img/header/vk.svg') no-repeat center;
-  background-size: contain;
+  transition: all .3s ease;
+
+  &:hover {
+    opacity: .5;
+  }
+
+  &.vk {
+    background: url('../img/header/vk.svg') no-repeat center;
+    background-size: contain;
+    margin-right: 10px;
+  }
+
+  &.inst {
+    background: url('../img/header/inst.svg') no-repeat center;
+    background-size: contain;
+    margin-right: 10px;
+  }
+
+  &.face {
+    background: url('../img/header/face.svg') no-repeat center;
+    background-size: contain;
+  }
 
   @media (min-width: 1366px) {
     width: 58px;

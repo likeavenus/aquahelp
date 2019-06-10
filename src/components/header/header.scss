@@ -72,6 +72,7 @@
     position: fixed;
     top: 50px;
     right: 20px;
+    display: none;
 
     &.active {
       width: 34px;
@@ -98,7 +99,7 @@
   width: 100%;
   z-index: -10;
   margin-top: -500px;
-  transition: all .3s ease;
+  transition: all .4s ease;
   box-shadow: 0 30px 20px rgba(0, 0, 0, .2);
   opacity: 0;
 
@@ -127,17 +128,20 @@
     display: flex;
     justify-content: center;
     padding-top: 50px;
+    position: fixed;
+    z-index: 9999;
+    top: -230px;
+    left: 0;
 
     &.active {
-      position: fixed;
-      top: 0;
+      top: 0px;
       left: 0;
     }
 
     &:after {
       left: 50%;
-      transform: translateX(-537%) rotateY(180deg);
-      top: 4px;
+      transform: translateX(-554%) rotateY(180deg);
+      top: 0px;
       right: auto;
     }
   }
@@ -148,8 +152,46 @@
     }
 
     &:after {
-      transform: translateX(-686%) rotateY(180deg);
+      transform: translateX(-722%) rotateY(180deg);
+      top: 5px;
     }
+  }
+}
+
+.header_socials {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media (min-width: $tablet) {
+    justify-content: center;
+  }
+
+  @media (min-width: 1366px) {
+    align-items: flex-start;
+  }
+}
+
+.header_social_link {
+  width: 32px;
+  height: 32px;
+  transition: all .3s ease;
+
+  &:hover {
+    opacity: .5;
+  }
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  & img {
+    width: 100%;
+  }
+
+  @media (min-width: 1920px) {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -209,7 +251,7 @@
     }
 
     &:last-child {
-      width: 80px;
+      width: 150px;
       height: 80px;
       margin-bottom: 0px;
       & img {
@@ -231,14 +273,16 @@
     }
 
     &:last-child {
-      padding: 0;
-      width: 60px;
-      height: 60px;
-      margin-left: 50px;
+      //padding: 0;
+      //width: 60px;
+      //height: 60px;
+      width: auto;
+      height: auto;
+      margin-left: 10px;
 
       & a {
-        width: 100%;
-        height: 100%;
+        //width: 100%;
+        //height: 100%;
       }
 
       & img {

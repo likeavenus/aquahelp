@@ -25,6 +25,28 @@ export default function header() {
             return false;
         });
 
+        const headerMenu = $('.js-menu-list');
+        const headerMenuOffset = headerMenu.offset().top;
+
+        let prevPosition = 0;
+
+        $(window).on('scroll', function () {
+            if ($(window).width() >= 1366) {
+                let scrollTop = $(this).scrollTop();
+
+                if (scrollTop > prevPosition || scrollTop === 0) {
+                    headerMenu.removeClass('active');
+                } else {
+                    headerMenu.addClass('active');
+                }
+
+                prevPosition = scrollTop;
+            }
+        });
+
+
+
+
 
     });
 }
