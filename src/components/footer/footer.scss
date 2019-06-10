@@ -120,6 +120,7 @@
   width: 32px;
   height: 32px;
   transition: all .3s ease;
+  background-size: contain;
 
   &:hover {
     opacity: .5;
@@ -127,8 +128,8 @@
 
   &.vk {
     background: url('../img/header/vk.svg') no-repeat center;
-    background-size: contain;
     margin-right: 10px;
+    background-size: cover;
   }
 
   &.inst {
