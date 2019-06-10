@@ -133,13 +133,13 @@
   }
 
   &.inst {
-    background: url('../img/header/inst.svg') no-repeat center;
+    background: url('../img/header/inst.svg') no-repeat center  / contain;
     background-size: contain;
     margin-right: 10px;
   }
 
   &.face {
-    background: url('../img/header/face.svg') no-repeat center;
+    background: url('../img/header/face.svg') no-repeat center  / contain;
     background-size: contain;
   }
 
