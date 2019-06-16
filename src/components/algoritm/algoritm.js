@@ -8,7 +8,7 @@ export default function algoritm() {
                     items: 1,
                     nav: false,
                     dots: false,
-                    stagePadding: 35
+                    stagePadding: 64
                 },
                 768: {
                     items: 2,

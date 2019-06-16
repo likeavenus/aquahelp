@@ -25,7 +25,7 @@
   width: 297px;
   height: 217px;
   margin: 0 auto;
-  background: url("../img/contacts/bg.png") #F7AA00 no-repeat center;
+  background: url("../img/contacts/bg.png") #ffb206  no-repeat center;
   background-size: cover;
   position: relative;
 
@@ -118,8 +118,8 @@
 
 .contacts_text {
   font-family: $lato-reg;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 18px;
   margin-left: 109px;
 
   @media (min-width: $tablet) {
@@ -138,4 +138,33 @@
   margin-left: 7px;
   color: #235784;
   text-decoration: none;
+}
+
+.contacts_mail {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: $lato-reg;
+  font-size: 15px;
+  transition: all .3s ease;
+
+  &:hover {
+    color: #673ab7;
+    transform: scale(1.02);
+  }
+
+  @media (min-width: $tablet) {
+    &:after {
+      display: inline-block;
+      vertical-align: middle;
+      content: '';
+      width: 40px;
+      height: 40px;
+      margin-left: 10px;
+      background: url("../img/contacts/mail.svg") no-repeat center / cover;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    font-size: 22px;
+  }
 }

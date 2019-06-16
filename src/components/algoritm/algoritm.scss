@@ -33,6 +33,7 @@
   line-height: 33px;
   padding-top: 10px;
   margin-bottom: 37px;
+  text-align: center;
 
   @media (min-width: $tablet) {
     margin-left: 106px;
@@ -41,6 +42,7 @@
     width: auto;
     padding-top: 24px;
     margin-bottom: 41px;
+    text-align: left;
   }
 
   @media (min-width: 1366px) {
@@ -84,13 +86,17 @@
   height: 94px;
   background: #40A8C4;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
   & p {
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 18px;
     font-family: $lato-med;
-    padding: 26px 15px 0;
+    padding: 0 15px 0;
+    text-align: center;
   }
 
   @media (min-width: $tablet) {
@@ -99,6 +105,13 @@
     margin-right: 45px;
     margin-bottom: 23px;
     position: relative;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 30px;
+    
+    & p {
+      text-align: left;
+    }
 
     &:first-child {
       &:before {
@@ -160,6 +173,7 @@
     align-items: center;
     justify-content: center;
     margin-right: 90px;
+    padding-top: 0;
 
     & p {
       font-size: 18px;
@@ -212,6 +226,21 @@
     &:not(:last-child):before {
       width: 184px;
       left: 270px;
+    }
+  }
+}
+
+.owl-item {
+  display: flex;
+  justify-content: center;
+  & li {
+    border: 2px solid transparent;
+    transition: all .3s ease;
+  }
+
+  &.active {
+    & li {
+      border: 2px solid rgba(152, 255, 15, 0.3);
     }
   }
 }
