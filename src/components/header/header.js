@@ -31,7 +31,7 @@ export default function header() {
         let prevPosition = 0;
 
         $(window).on('scroll', function () {
-            if ($(window).width() >= 1366) {
+            if ($(window).width() >= 1200) {
                 let scrollTop = $(this).scrollTop();
 
                 if (scrollTop > prevPosition || scrollTop === 0) {

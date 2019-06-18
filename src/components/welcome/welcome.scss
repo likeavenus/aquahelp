@@ -7,6 +7,10 @@
     width: 728px;
   }
 
+  @media (min-width: 1200px) {
+    width: 1000px;
+  }
+
   @media (min-width: 1366px) {
     width: 1280px;
     padding-bottom: 372px;
@@ -129,6 +133,12 @@
     right: 0;
   }
 
+  @media (min-width: 1200px) {
+    width: 500px;
+    height: auto;
+    top: -130px;
+  }
+
   @media (min-width: 1366px) {
     width: 502px;
     height: 476px;
@@ -163,5 +173,30 @@
 
   @media (min-width: 1366px) {
     display: none;
+  }
+}
+
+.welcome_button_mob {
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.welcome_button_desk {
+  display: none;
+
+  &:hover {
+    transform: scale(1.03);
+    background: #3fa8c4;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+  }
+
+  @media (min-width: 1366px) {
+    font-size: 30px;
+    width: 300px;
+    height: 60px;
   }
 }

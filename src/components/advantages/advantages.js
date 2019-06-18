@@ -10,6 +10,12 @@ export default function advantages() {
                     dots: false,
                     stagePadding: 25
                 },
+                375: {
+                    items: 1,
+                    nav: false,
+                    dots: false,
+                    stagePadding: 55
+                },
                 768: {
                     items: 2,
                     stagePadding: 80

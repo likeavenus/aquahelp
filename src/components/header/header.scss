@@ -22,6 +22,10 @@
   align-items: center;
   margin-bottom: 47px;
 
+  @media (min-width: 1024px) {
+    align-items: flex-start;
+  }
+
   @media (min-width: 1366px) {
     margin-bottom: 74px;
   }
@@ -38,6 +42,11 @@
 .header_logo {
   width: 82.5px;
   height: 55px;
+
+  @media (min-width: 1024px) {
+    width: 200px;
+    height: auto;
+  }
 
   @media (min-width: 1366px) {
     width: 213px;
@@ -66,7 +75,7 @@
     background-size: contain;
   }
 
-  @media (min-width: 1366px) {
+  @media (min-width: 1200px) {
     width: 59px;
     height: 28px;
     position: fixed;
@@ -124,7 +133,7 @@
     text-align: center;
   }
 
-  @media (min-width: 1366px) {
+  @media (min-width: 1200px) {
     display: flex;
     justify-content: center;
     padding-top: 50px;
@@ -167,7 +176,7 @@
     justify-content: center;
   }
 
-  @media (min-width: 1366px) {
+  @media (min-width: 1200px) {
     align-items: flex-start;
   }
 }
@@ -240,7 +249,7 @@
     }
   }
 
-  @media (min-width: 1366px) {
+  @media (min-width: 1200px) {
     margin-bottom: 0px;
     &:after {
       display: none;
@@ -305,10 +314,10 @@
   display: none;
   transition: all .3s ease;
 
-  @media (min-width: 1366px) {
+  @media (min-width: 1200px) {
     display: block;
     position: absolute;
-    top: 37px;
+    top: 17px;
     left: 50%;
     transform: translateX(103%);
     color: #235784;
@@ -316,6 +325,10 @@
     line-height: 53px;
     font-family: $oswald-bold;
     text-decoration: none;
+  }
+
+  @media (min-width: 1366px) {
+    top: 37px;
   }
 
   @media (min-width: 1920px) {
